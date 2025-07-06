@@ -36,7 +36,6 @@ CREATE TABLE IF NOT EXISTS Orders(
     customer_id INT,
     order_date DATE NOT NULL,
     FOREIGN KEY(customer_id) REFERENCES Customers(customer_id)
-    
 );
 
 -- Stores information about the books included in each order.
