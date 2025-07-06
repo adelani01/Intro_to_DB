@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS books(
 author_name VARCHAR(215)
 )
 
-CREATE TABLE  IF NOT EXISTS authors(
+CREATE TABLE  IF NOT EXISTS Authors(
     author_id PRIMARY KEY,
     author_name VARCHAR(215)
 )
