@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS Orders(
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
     order_date DATE NOT NULL,
-    FOREIGN KEY(customer_id) REFERENCES Customers(customer_id)
+    
 );
 
 -- Stores information about the books included in each order.
