@@ -41,10 +41,10 @@ CREATE TABLE IF NOT EXISTS Orders(
 
 -- Stores information about the books included in each order.
 CREATE TABLE IF NOT EXISTS Order_Details(
-    orderdetailid INT  AUTO_INCREMENT PRIMARY KEY,
+    orderdetailid INT AUTO_INCREMENT PRIMARY KEY,
     book_id INT,
     order_id INT,
     quantity DOUBLE NOT NULL,
-    FOREIGN KEY(order_id) REFERENCES ORDERS(order_id),
+    FOREIGN KEY(order_id) REFERENCES Orders(order_id),
     FOREIGN KEY(book_id) REFERENCES Books(book_id)
 );
